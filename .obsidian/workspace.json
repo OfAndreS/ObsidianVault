@@ -1,0 +1,274 @@
+{
+  "main": {
+    "id": "d66812fe351d518d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3791784b4b1b98b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fe3dd9010aab9ef",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "- HOME/🏠 Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "🏠 Home"
+            }
+          },
+          {
+            "id": "2d2929cd650a03c5",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "- HOME/🔍 Search.base",
+                "viewName": "Visualizaçao padrão"
+              },
+              "pinned": true,
+              "icon": "lucide-layout-grid",
+              "title": "🔍 Search"
+            }
+          },
+          {
+            "id": "9952cc08a985188c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vet/Notes/Apptainer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Apptainer"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6af9d53c72536aad",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dfaddf1c614d4b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "37b28b68ce85320f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9f5b49e797bf4917",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "redes",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e3e29ae8261b5ba0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 251.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "7fc568454ed8f471",
+    "type": "split",
+    "children": [
+      {
+        "id": "476eb47e482e6a58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1ea98561ea217bf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "FMC II - UIII - Diagrama de Hasse.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for FMC II - UIII - Diagrama de Hasse"
+            }
+          },
+          {
+            "id": "2bc78ca5f9c1cebb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "FMC II - UIII - Diagrama de Hasse.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from FMC II - UIII - Diagrama de Hasse"
+            }
+          },
+          {
+            "id": "0f711ef2f057583f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "FMC II - UIII - Diagrama de Hasse.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of FMC II - UIII - Diagrama de Hasse"
+            }
+          },
+          {
+            "id": "be1e331a92fc9338",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7f7a9162ead36db8",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "pexels-banner:🚩 Pixel Banner Menu": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
+    }
+  },
+  "active": "9952cc08a985188c",
+  "lastOpenFiles": [
+    "- HOME/🔍 Search.base",
+    "file:/home/andre/Documents/Dev/Test/JuMath/JuMath.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Numeros Complexos/Numeros Complexos.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/JuRevisao.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Polinomios/Lista 3 - Operacoes.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Polinomios/Lista 2 - Grau.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Polinomios/Lista 1 - Conceito.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Numeros Complexos/Lista 4 - Operacoes.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Numeros Complexos/Lista 3 - Conjugado.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Numeros Complexos/Lista 2 - Conceito.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Numeros Complexos/Lista 1 - Unidade Imaginaria.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Numeros Complexos/Lista 5 - Operacoes.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Numeros Complexos/Lista 4 - Potencias de i.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Listas/Polinomios/Lista 1 - Conceito.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Listas/Polinomios/Lista 3 - Operacoes.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Listas/Polinomios/Lista 2 - Grau.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Listas/Lista 5 - Operacoes.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Listas/Lista 4 - Potencias de i.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Listas/Lista 3 - Conjugado.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Listas/Lista 2 - Conceito.md",
+    "file:/home/andre/Documents/Dev/Test/JuMath/Listas/Lista 1 - Unidade Imaginaria.md",
+    "file:/home/andre/Documents/Dev/Work/Ontology/README.md",
+    "file:/home/andre/Documents/Dev/Test/EDB2/11/Questões/Bloco_02_Questoes_08_a_14.md",
+    "file:/home/andre/Documents/Dev/Test/EDB2/11/Questões/Bloco_01_Questoes_01_a_07.md",
+    "Research/Projects/Ontology/All/Roteiro.md",
+    "Research/Projects/Ontology/Ontology.md",
+    "Artificial I/Algorithms/Supervised/Architecture/RNN/All",
+    "Artificial I/Algorithms/Supervised/Architecture/Transformers/All",
+    "Artificial I/Algorithms/Supervised/Architecture/Transformers",
+    "Software/Web/SemWeb/All",
+    "Software/Web/SemWeb",
+    "Artificial I/Algorithms/Supervised/Architecture/RNN",
+    "Artificial I/Frameworks/PyTorch/All",
+    "- FILES/Attachments/Pasted image 20261107153248.png",
+    "- FILES/Attachments/Pasted image 20261107153219.png",
+    "- FILES/Attachments/Pasted image 20261106101209.png",
+    "- FILES/Attachments/Pasted image 20261106100946.png",
+    "Artificial I/Frameworks/TensorFlow/All",
+    "Artificial I/Frameworks/TensorFlow",
+    "Software/Algorithms/All/DS - IMG/Pasted image 20250521211038.png",
+    "Software/Algorithms/All/DS - IMG/Pasted image 20250521005210.png",
+    "Software/Algorithms/All/DS - IMG/Pasted image 20250520220143.png",
+    "Software/Algorithms/All/DS - IMG/Pasted image 20250520215513.png",
+    "- FILES/Attachments/Pasted image 20261012210111.png",
+    "- FILES/Attachments/Pasted image 20261012205745.png",
+    "Academy/Calculus/Calculus One/All/Extra/1.1 Limites/Quest/Definição Precisa Limite.canvas",
+    "Academy/Calculus/Calculus One/All/Extra/2.2 Derivadas/2.2 Derivadas.canvas",
+    "Academy/Statistics/All/Análise Combinatória/Termo Geral Binômio de Newton.canvas",
+    "Untitled.canvas"
+  ]
+}

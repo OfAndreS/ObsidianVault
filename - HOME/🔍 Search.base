@@ -1,0 +1,88 @@
+views:
+  - type: cards
+    name: "- Projects"
+    filters:
+      and:
+        - file.folder == "- TASK/All/Projects/All"
+    sort:
+      - property: file.name
+        direction: ASC
+    cardSize: 200
+    imageAspectRatio: 0.6
+    image: note.banner
+  - type: cards
+    name: TensorFlow
+    filters:
+      or:
+        - file.folder == "Tools/Bibliotecas/TensorFlow/All"
+        - and:
+            - file.folder == "Tools/Bibliotecas/TensorFlow"
+    order:
+      - file.name
+    imageFit: contain
+    cardSize: 170
+  - type: cards
+    name: Leng - Py
+    filters:
+      or:
+        - file.folder == "Software/Languages/Py/All"
+        - and:
+            - file.folder == "Software/Languages/Py/All/Py Type"
+        - and:
+            - file.folder == "Software/Languages/Py"
+    cardSize: 200
+    imageAspectRatio: 1
+    rowHeight: medium
+  - type: cards
+    name: Leng - C++
+    filters:
+      or:
+        - file.folder == "Software/Languages/C++/All"
+        - file.folder == "Software/Languages/C++/All/C++ Type"
+        - file.folder == "Software/Languages/C++/All/C++ STD Liby"
+        - file.folder == "Software/Languages/C++/All/C++ Poo"
+        - file.folder == "Software/Languages/C++/All/C++ Mdf"
+    cardSize: 170
+  - type: cards
+    name: Leng - SQL
+    filters:
+      or:
+        - file.folder == "Structure/Data Base/Languages/SQL"
+        - file.folder == "Structure/Data Base/Languages/SQL/All"
+    cardSize: 170
+  - type: cards
+    name: Tools
+    filters:
+      and:
+        - file.inFolder("Tools/Management")
+    rowHeight: medium
+    markers: number
+    indentProperties: false
+  - type: cards
+    name: IA - Supervised
+    filters:
+      and:
+        - file.folder.startsWith("Artificial I/Machine Learning/Supervised")
+    imageFit: contain
+  - type: cards
+    name: IA - Unsupervised
+    filters:
+      and:
+        - file.folder.startsWith("Artificial I/Machine Learning/Unsupervised")
+    imageFit: contain
+  - type: cards
+    name: IA - Generative
+    filters:
+      and:
+        - file.folder.startsWith("Artificial I/Machine Learning/Generative")
+    imageFit: contain
+  - type: cards
+    name: Web
+    filters:
+      and:
+        - file.inFolder("Software/Web")
+  - type: cards
+    name: Visualizaçao padrão
+    filters:
+      not:
+        - file.inFolder("- FILES")

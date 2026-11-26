@@ -1,0 +1,15 @@
+/* Atualizado para a paleta Nord (Azul dos links) */
+.callout[data-callout="done"],
+.callout[data-callout="check"],
+.admonition-done {
+    --callout-color: 136, 192, 208; /* RGB Nord Accent */
+    --admonition-color: 136, 192, 208;
+    background-color: color-mix(in srgb, rgb(136, 192, 208) 10%, var(--background-primary)) !important; /* Fundo azul suave e 100% opaco */
+}
+
+/* Garante que o ícone e título acompanhem a cor */
+.callout[data-callout="done"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.admonition-done .admonition-title {
+    color: rgb(136, 192, 208);
+}

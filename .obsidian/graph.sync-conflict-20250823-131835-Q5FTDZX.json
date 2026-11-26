@@ -1,0 +1,121 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Software/languages/C++  ",
+      "color": {
+        "a": 1,
+        "rgb": 7960782
+      }
+    },
+    {
+      "query": "path:Software/languages/C  ",
+      "color": {
+        "a": 1,
+        "rgb": 2964056
+      }
+    },
+    {
+      "query": "path:Software/languages/Py  ",
+      "color": {
+        "a": 1,
+        "rgb": 4273630
+      }
+    },
+    {
+      "query": "path:Academy/Matemática/Funções  ",
+      "color": {
+        "a": 1,
+        "rgb": 6684672
+      }
+    },
+    {
+      "query": "path:\"Academy/Matemática/Advanced Math/Cálculo 1\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 9181208
+      }
+    },
+    {
+      "query": "path:\"Academy/Matemática/Advanced Math/Probabilidade\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16662078
+      }
+    },
+    {
+      "query": "path:\"Academy/Matemática/Advanced Math/VGA\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14186862
+      }
+    },
+    {
+      "query": "path:\"System/Architecture/Data Struct\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 7798963
+      }
+    },
+    {
+      "query": "path:\"System/Architecture/Operation S\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 15835899
+      }
+    },
+    {
+      "query": "path:Software/Tools/Git  ",
+      "color": {
+        "a": 1,
+        "rgb": 13309205
+      }
+    },
+    {
+      "query": "path:\"Academy/Matemática/Basic Math\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 3670016
+      }
+    },
+    {
+      "query": "path:\"Software/Study IA/Audio Synthesis\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 12178052
+      }
+    },
+    {
+      "query": "path:\"Structure/Data Base\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:\"System/Linux Notes\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16746496
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 0.304166666666667,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 2.1108367401438315,
+  "close": true
+}

@@ -1,0 +1,14 @@
+{
+  "cssTheme": "AtomNord",
+  "theme": "obsidian",
+  "baseFontSize": 16,
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "center-tables",
+    "print",
+    "custom-admonition",
+    "blue-adamotion",
+    "centralizar-mermaid"
+  ],
+  "showRibbon": true
+}

@@ -1,0 +1,15 @@
+/* Atualizado para a paleta Coral */
+.callout[data-callout="done"],
+.callout[data-callout="check"],
+.admonition-done {
+    --callout-color: 255, 107, 107; /* Novo RGB Coral */
+    --admonition-color: 255, 107, 107;
+    background-color: rgba(255, 107, 107, 0.1); /* Fundo coral suave */
+}
+
+/* Garante que o ícone e título acompanhem a cor */
+.callout[data-callout="done"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.admonition-done .admonition-title {
+    color: rgb(255, 107, 107);
+}

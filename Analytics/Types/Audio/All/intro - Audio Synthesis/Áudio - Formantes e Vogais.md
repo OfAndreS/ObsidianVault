@@ -1,0 +1,3 @@
+
+---
+A sincronização está funcionando?

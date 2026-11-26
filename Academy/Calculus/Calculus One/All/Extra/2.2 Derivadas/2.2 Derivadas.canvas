@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"be8bc69c47dddedb","type":"text","text":"**Domínio da Função 1 )** \n- Identifique os valores de $x$ para os quais a função é definida, evitando problemas como divisão por zero ou raízes de números negativos.","x":-40,"y":-260,"width":421,"height":173},
+		{"id":"a1983d16aff54a74","type":"text","text":"**Segunda Derivada 3 )** \n- Determine a  segunda derivada para: \n1. Informações sobre a concavidade \n2. Identificar possíveis pontos de inflexão.","x":-40,"y":180,"width":421,"height":173},
+		{"id":"e7395c3dab198874","type":"text","text":"**Pontos Críticos 4 )** \n- Resolva $f^{\\prime}(x)=0$ ou identifique onde $f^{\\prime}(x)$ não existe para encontrar candidatos a máximos, mínimos ou pontos de inflexão.","x":440,"y":180,"width":421,"height":173},
+		{"id":"9de84e65e0fc5475","type":"text","text":"**Intervalos de Crescimento e Decrescimento 5 )** \n- Analise os sinais de $f^{\\prime}(x)$ para determinar os intervalos onde a função aumenta ou diminui.","x":440,"y":-40,"width":421,"height":173},
+		{"id":"5d890259a4598074","type":"text","text":"**Máximos e Mínimos Locais 6 )** \n- Identifique os extremos locais avaliando os pontos críticos e as bordas do domínio.","x":440,"y":-260,"width":421,"height":173},
+		{"id":"c735e0d4415c88dc","type":"text","text":"**Possíveis Pontos de Inflexão 7 )** \n- Resolva $f^{\\prime\\prime}(x)=0$ ou analise onde $f^{\\prime\\prime}(x)$ não existe para encontrar candidatos a pontos de inflexão.","x":920,"y":-260,"width":421,"height":173},
+		{"id":"1de28cb324e90526","type":"text","text":"**Intervalos de Concavidade 8 )** _Conexão 05 - 08_\n- Use o sinal de $f^{\\prime\\prime}(x)$ para determinar onde a função é côncava para cima ou para baixo.","x":920,"y":-40,"width":421,"height":173},
+		{"id":"303a5161fb5b4bf3","type":"text","text":"**Pontos de Inflexão 9 )**\n- Confirme os pontos de inflexão verificando se a concavidade muda nesses pontos.","x":920,"y":180,"width":421,"height":173},
+		{"id":"33d5f1d84871ca7b","type":"text","text":"#### ***RoadMap Gráficos***","x":-40,"y":-360,"width":1381,"height":60,"color":"6"},
+		{"id":"45bf2b7dab91d1f1","type":"text","text":"**Assíntotas 10 )** _Conexão 01 - 10_\n- Avalie os limites da função nos extremos do domínio para identificar assíntotas verticais, horizontais ou oblíquas e suas equações.\n  \n**Khan**: [Limites no infinito](https://pt.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-15/e/limits-at-infinity-where-x-is-unbounded)","x":920,"y":400,"width":421,"height":200},
+		{"id":"e13bc8140b29a9de","type":"text","text":"**Primeira Derivada 2 )** \n- Calcule a derivada para entender: \n1. A taxa de variação da função \n2. Analisar o crescimento ou decrescimento.","x":-40,"y":-40,"width":421,"height":173},
+		{"id":"04a870629165554a","type":"text","text":"**Faça dois esboços do gráfico 11 )**\n\n1. Identificando os intervalos de concavidade para cima / baixo associado com os de crescimento / decrescimento.\n2. Outro esboço à mão livre deixando claro o comportamento do gráfico no domínio da função.\n   \n**Coordenadas Pontos Importantes do Gráfico 12 )**","x":-40,"y":400,"width":901,"height":200}
+	],
+	"edges":[
+		{"id":"b2b684ee7765fbe0","fromNode":"be8bc69c47dddedb","fromSide":"bottom","toNode":"e13bc8140b29a9de","toSide":"top","color":"6"},
+		{"id":"64825674bb0b408f","fromNode":"e13bc8140b29a9de","fromSide":"bottom","toNode":"a1983d16aff54a74","toSide":"top","color":"6"},
+		{"id":"76a2071c0570f18d","fromNode":"5d890259a4598074","fromSide":"right","toNode":"c735e0d4415c88dc","toSide":"left","color":"6"},
+		{"id":"3146f34f6067b810","fromNode":"a1983d16aff54a74","fromSide":"right","toNode":"e7395c3dab198874","toSide":"left","color":"6"},
+		{"id":"f77ea28e4e8f655b","fromNode":"e7395c3dab198874","fromSide":"top","toNode":"9de84e65e0fc5475","toSide":"bottom","color":"6"},
+		{"id":"60442f5109585954","fromNode":"9de84e65e0fc5475","fromSide":"top","toNode":"5d890259a4598074","toSide":"bottom","color":"6"},
+		{"id":"44519576cb4a3480","fromNode":"c735e0d4415c88dc","fromSide":"bottom","toNode":"1de28cb324e90526","toSide":"top","color":"6"},
+		{"id":"f130b602e3c6e4d5","fromNode":"1de28cb324e90526","fromSide":"bottom","toNode":"303a5161fb5b4bf3","toSide":"top","color":"6"},
+		{"id":"63d2ab056d285e61","fromNode":"303a5161fb5b4bf3","fromSide":"bottom","toNode":"45bf2b7dab91d1f1","toSide":"top","color":"6"},
+		{"id":"b3d18ad42b95c0d1","fromNode":"45bf2b7dab91d1f1","fromSide":"left","toNode":"04a870629165554a","toSide":"right","color":"6"}
+	]
+}

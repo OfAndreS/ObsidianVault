@@ -1,0 +1,12 @@
+{
+  "cssTheme": "Atom",
+  "theme": "obsidian",
+  "baseFontSize": 16,
+  "accentColor": "#01fe05",
+  "enabledCssSnippets": [
+    "center-tables",
+    "print",
+    "custom-admonition",
+    "purple-admonition"
+  ]
+}

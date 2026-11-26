@@ -1,0 +1,11 @@
+{
+  "cssTheme": "Ukiyo",
+  "theme": "moonstone",
+  "baseFontSize": 16,
+  "accentColor": "#8de48b",
+  "enabledCssSnippets": [
+    "print",
+    "custom-admonition",
+    "center-tables"
+  ]
+}

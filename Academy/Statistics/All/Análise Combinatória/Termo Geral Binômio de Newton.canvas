@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"0b5a133f352c3ed6","type":"text","text":"Colocar a expressão na Formula: $\\binom npx^{n-p}\\cdot a^{p}\\quad;\\quad p=0,1,2,\\cdots,n .$","x":-103,"y":-60,"width":298,"height":88},
+		{"id":"4d2692f41f4ed6b8","type":"text","text":"Caso $x$ não esteja isolado Ex:\n$\\binom npx^{n-p}\\cdot (a/x)^{p}\\quad$","x":280,"y":-60,"width":280,"height":88},
+		{"id":"629c285502b24310","type":"text","text":"Caso X esteja isolado Ex:\n$\\binom npx^{n-p}\\cdot a^{p}\\quad$","x":310,"y":60,"width":250,"height":88},
+		{"id":"43541ee8a6906a1a","type":"text","text":"Igualar $n-p$ ao termo esperado visando descobrir o $p$","x":571,"y":200,"width":309,"height":80},
+		{"id":"4643a6efe988a872","type":"text","text":"Manipular a expressão visando um $x$ único","x":601,"y":-46,"width":250,"height":60},
+		{"id":"3ff4dd6523f51631","x":630,"y":480,"width":191,"height":99,"type":"text","text":"Multiplicar todos os termos e obter o resultado final"},
+		{"id":"13e38f3de529fec9","type":"text","text":"Encontrar o termo para elevar $x$","x":-108,"y":-160,"width":308,"height":60},
+		{"id":"0bac81b469772ec5","type":"text","text":"Resolver o termo $(n/p)$\nUtilizando a Formula: \n$C(n,p)=\\frac{n!}{p!(n-p)!}$","x":607,"y":320,"width":239,"height":120}
+	],
+	"edges":[
+		{"id":"5da57bc303d99373","fromNode":"0b5a133f352c3ed6","fromSide":"right","toNode":"629c285502b24310","toSide":"left"},
+		{"id":"d1425966ec0c2c4e","fromNode":"0b5a133f352c3ed6","fromSide":"right","toNode":"4d2692f41f4ed6b8","toSide":"left"},
+		{"id":"d330ec8e65000938","fromNode":"13e38f3de529fec9","fromSide":"bottom","toNode":"0b5a133f352c3ed6","toSide":"top"},
+		{"id":"293cb3eb0d6c7b61","fromNode":"629c285502b24310","fromSide":"right","toNode":"43541ee8a6906a1a","toSide":"top"},
+		{"id":"ff30855528f92336","fromNode":"4643a6efe988a872","fromSide":"bottom","toNode":"43541ee8a6906a1a","toSide":"top"},
+		{"id":"54870b0c946115fc","fromNode":"4d2692f41f4ed6b8","fromSide":"right","toNode":"4643a6efe988a872","toSide":"left"},
+		{"id":"a5fe94fdfe94bfed","fromNode":"43541ee8a6906a1a","fromSide":"bottom","toNode":"0bac81b469772ec5","toSide":"top"},
+		{"id":"2180ca96799c8ee0","fromNode":"0bac81b469772ec5","fromSide":"bottom","toNode":"3ff4dd6523f51631","toSide":"top"}
+	]
+}

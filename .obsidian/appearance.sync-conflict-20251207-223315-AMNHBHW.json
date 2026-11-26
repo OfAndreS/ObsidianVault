@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Ukiyo",
+  "theme": "obsidian",
+  "baseFontSize": 16,
+  "accentColor": "#49ca6c",
+  "enabledCssSnippets": [
+    "center-tables",
+    "print"
+  ]
+}

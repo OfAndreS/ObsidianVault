@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"aa787eb0936a947b","type":"text","text":"### Prova de Limites","x":-500,"y":-240,"width":1260,"height":63,"color":"1"},
+		{"id":"1fb9b355399ca88f","type":"text","text":"##### ε Épsilon Desconhecido","x":280,"y":-150,"width":280,"height":60,"color":"1"},
+		{"id":"22cb0228255b7bad","type":"text","text":"**Começar Com:**\n- $|f(x) - L| < ε$\n  \n**Terminar em:**\n- $-δ < |x - a| < δ$ \n  (Igualando os termos)","x":380,"y":210,"width":280,"height":220},
+		{"id":"19619a8577b3786a","type":"text","text":"**Objetivos:**\n- Definir um Delta aceitável\n- Provar que a afirmação é verdadeira","x":380,"y":0,"width":280,"height":180},
+		{"id":"bf12ab48d86d7c75","type":"text","text":"##### ε Épsilon Conhecido","x":-280,"y":-150,"width":280,"height":60,"color":"1"},
+		{"id":"7c62d9044da003f0","type":"text","text":"**Começar Com:**\n- $|f(x) - L| < ε$\n  \n**Terminar em:**\n- Isolando o $X$","x":-420,"y":210,"width":280,"height":220},
+		{"id":"1ce29d4aecf96d7d","type":"text","text":"**Objetivos:**\n- Encontrar o intervalo Delta","x":-420,"y":0,"width":280,"height":180},
+		{"id":"22d6eb8f4220f518","type":"text","text":"***Terminar o cálculo*** \n\n**Começar com**\n- $0 < |x - a| < δ$ \n\n**Terminar em:**\n- $|f(x) - L| < ε$\n\n**Obs:**\n- Diferenciar o enunciado quando o pedido é o limite de $f(x)$ ou limite de uma função.\n- $x$ no cálculo corresponde ao $x_0$ \n","x":0,"y":95,"width":280,"height":450},
+		{"id":"4eeeb4b6e6d858c0","type":"text","text":"**Novo delta**\n- Igualar o Épsilon obtido pela manipulação do Almanaque ao Delta","x":380,"y":460,"width":280,"height":170},
+		{"id":"215802f9259e5120","x":700,"y":0,"width":280,"height":470,"type":"text","text":"**Artifícios**\n- Soma zero\n- Multiplica por 1\n- $x+1>x>z$\n- Comutatividade\n\n**Obrigações**\n- Para de escolher o menor ε. Multiplicar o item da esquerda por $(-1)$\n- Seja δ = ε; \n  $=>$ $0 < |x - a| < δ = ε$\n  $=>$ $-ε < |x - a| < ε$"}
+	],
+	"edges":[
+		{"id":"0d71d1170d18f774","fromNode":"1ce29d4aecf96d7d","fromSide":"bottom","toNode":"7c62d9044da003f0","toSide":"top"},
+		{"id":"cd38988479b330c8","fromNode":"19619a8577b3786a","fromSide":"bottom","toNode":"22cb0228255b7bad","toSide":"top"},
+		{"id":"d6d69f98c10ded83","fromNode":"bf12ab48d86d7c75","fromSide":"bottom","toNode":"1ce29d4aecf96d7d","toSide":"top"},
+		{"id":"860629f6becd9934","fromNode":"1fb9b355399ca88f","fromSide":"bottom","toNode":"19619a8577b3786a","toSide":"top"},
+		{"id":"2747dff894d3a54b","fromNode":"22cb0228255b7bad","fromSide":"left","toNode":"22d6eb8f4220f518","toSide":"right"},
+		{"id":"feffc1300e9124d9","fromNode":"7c62d9044da003f0","fromSide":"right","toNode":"22d6eb8f4220f518","toSide":"left"},
+		{"id":"5a440dc413e30cf5","fromNode":"22cb0228255b7bad","fromSide":"bottom","toNode":"4eeeb4b6e6d858c0","toSide":"top"}
+	]
+}

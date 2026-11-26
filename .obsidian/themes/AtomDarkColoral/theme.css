@@ -1,0 +1,155 @@
+/* =================================================================
+   TEMA CORAL DARK - COMPLETE EDITION
+   Inclui: Paleta, Accent Flags e Header Patch
+================================================================= */
+
+.theme-dark {
+  /* --- 1. Definição da Paleta Principal --- */
+  --coral-accent: #FF6B6B;       /* O Coral vibrante para destaques */
+  --coral-light: #FF9E9E;        /* Versão clara para hovers/tags */
+  --coral-muted: #c98a8a;        /* Versão apagada para secundários */
+
+  --bg-dark-deep: #1E1E1E;       /* Fundo profundo (quase preto) */
+  --bg-dark-soft: #252526;       /* Fundo secundário (painéis) */
+  --bg-border: #333333;          /* Bordas sutis */
+
+  --text-main: #d6d6d6;          /* Branco "off-white" */
+  --text-muted: #A0A0A0;         /* Cinza secundário */
+
+  /* --- 2. Controle do Accent Color (Interface do Obsidian) --- */
+  /* Isso força o Obsidian a usar o Coral nos botões e menus */
+  --accent-h: 0;
+  --accent-s: 100%;
+  --accent-l: 71%;
+
+  /* Garante que variáveis de sistema sigam o Coral */
+  --text-accent: var(--coral-accent);
+  --text-accent-hover: var(--coral-light);
+  --interactive-accent: var(--coral-accent);
+  --interactive-accent-hover: var(--coral-light);
+  --interactive-accent-rgb: 255, 107, 107; /* Necessário para efeitos de clique */
+
+
+  /* --- 3. Mapeamento para Variáveis do Tema --- */
+
+  /* Fundos */
+  --background-primary: var(--bg-dark-deep);
+  --background-primary-alt: var(--bg-dark-soft);
+  --background-secondary: var(--bg-dark-soft);
+  --background-secondary-alt: var(--bg-dark-deep);
+  --background-modifier-border: var(--bg-border);
+
+  /* Textos Gerais */
+  --text-normal: var(--text-main);
+  --text-muted: var(--text-muted);
+
+  /* Títulos (Definição base) */
+  --text-title-h1: var(--text-main);
+  --text-title-h2: var(--text-main);
+  --text-title-h3: var(--text-main);
+  --text-title-h4: var(--text-main);
+  --text-title-h5: var(--text-main);
+  --text-title-h6: var(--text-main);
+
+  /* Links */
+  --text-link: var(--coral-accent);
+  --text-a: var(--coral-accent);
+  --text-a-hover: var(--coral-light);
+
+  /* Código e Realce */
+  --markup-code: var(--coral-muted);
+  --text-tag: var(--coral-light);
+  --text-mark: rgba(255, 107, 107, 0.3); /* Marca-texto coral transparente */
+
+  /* Citações e Tabelas */
+  --blockquote-border: var(--coral-accent);
+
+  /* Fontes */
+  --font-family-editor: Avenir, Avenir Next, sans-serif;
+  --font-family-preview: Avenir, Avenir Next, sans-serif;
+}
+
+/* =================================================================
+   REGRAS DE ESTILO ESTRUTURAL
+================================================================= */
+
+/* Links Internos: Sem sublinhado até passar o mouse */
+.internal-link {
+  text-decoration: none !important;
+}
+.internal-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Scrollbar fina e arredondada */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-border);
+    border-radius: 50px;
+}
+
+/* Seleção de texto */
+.is-selected {
+  background-color: rgba(255, 107, 107, 0.4) !important;
+}
+
+/* Notices (Avisos do sistema) */
+.notice {
+  color: var(--text-normal) !important;
+  background-color: var(--bg-dark-soft) !important;
+  border: 1px solid var(--coral-accent);
+}
+
+/* Blocos de código (Modo Leitura) */
+.markdown-preview-view code {
+  background-color: var(--background-secondary-alt);
+  font-size: 0.9em;
+  color: var(--markup-code);
+}
+
+/* URLs e Links Externos */
+.cm-url, .external-link {
+  color: var(--text-link) !important;
+}
+a:not(.internal-link) {
+  font-style: italic;
+}
+
+/* Tabelas - CORRIGIDO: Bordas cinza sutis */
+.markdown-preview-view th, .markdown-preview-view td {
+  border: 1px solid var(--bg-border); /* Agora usa o cinza sutil */
+}
+
+/* =================================================================
+   PATCH DE CORREÇÃO DE TÍTULOS (FORCE HEADERS)
+   Garante a cor Coral em todos os modos de visualização
+================================================================= */
+
+/* 1. Modo de Leitura (Reading View) */
+.markdown-preview-view h1, 
+.markdown-preview-view h2, 
+.markdown-preview-view h3, 
+.markdown-preview-view h4, 
+.markdown-preview-view h5, 
+.markdown-preview-view h6 {
+    color: var(--text-main) !important;
+}
+
+/* 2. Modo de Edição (Live Preview / Source) */
+.cm-header-1, 
+.cm-header-2, 
+.cm-header-3, 
+.cm-header-4, 
+.cm-header-5, 
+.cm-header-6 {
+    color: var(--text-main) !important;
+}
+
+/* 3. Título do Arquivo (Topo da nota) */
+.inline-title {
+    color: var(--text-main) !important;
+}
+

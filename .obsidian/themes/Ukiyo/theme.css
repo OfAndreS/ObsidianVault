@@ -1,0 +1,173 @@
+/* ==============================================
+    TEMA OBSIDIAN - PALETA TERRA ROSADA (FINAL V3)
+  ==============================================
+*/
+
+.theme-light {
+  /* --- Paleta de Cores Principal --- */
+  --cor-fundo-principal: #D9CBBF;
+  --cor-fundo-secundario: #C9BCB1;
+  --cor-fundo-codigo: #C9BCB1;
+  /* <-- SUA COR PERSONALIZADA */
+  --cor-texto-normal: #423B35;
+  --cor-destaque-interativo: #665C53;
+  --cor-destaque-hover: #423B35;
+  --cor-destaque-sutil: #8C7F73;
+  --cor-realce-texto: #eac357;
+
+  /* --- Paleta de Cores para Sintaxe --- */
+  --syntax-keyword: #B5654E;
+  /* Terracota para palavras-chave (def, if, return) */
+  --syntax-string: #6A856A;
+  /* Verde sálvia para textos (strings) */
+  --syntax-number: #A6753B;
+  /* Ocre/Dourado para números */
+  --syntax-function: #665C53;
+  /* Marrom escuro para nomes de funções */
+  --syntax-comment: #85786B;
+  /* Tom de argila para comentários */
+  --syntax-operator: #8C7F73;
+  /* Marrom sutil para operadores (=, +, *) */
+  --syntax-variable: var(--cor-texto-normal);
+  /* Cor principal do texto para variáveis */
+
+  /* --- Variáveis do Tema Obsidian --- */
+  --background-primary: var(--cor-fundo-principal);
+  --background-primary-alt: var(--cor-fundo-secundario);
+  --background-secondary: var(--cor-fundo-secundario);
+  --background-secondary-alt: var(--cor-fundo-codigo);
+  --background-modifier-border: var(--cor-destaque-sutil);
+  --text-normal: var(--cor-texto-normal);
+  --text-title-h1: var(--cor-texto-normal);
+  --text-title-h2: var(--cor-texto-normal);
+  --text-title-h3: var(--cor-texto-normal);
+  --text-title-h4: var(--cor-texto-normal);
+  --text-title-h5: var(--cor-texto-normal);
+  --text-title-h6: var(--cor-texto-normal);
+  --text-mark: var(--cor-realce-texto);
+  --text-link: var(--cor-destaque-interativo);
+  --text-a: var(--cor-destaque-interativo);
+  --text-a-hover: var(--cor-destaque-hover);
+  --text-tag: var(--cor-destaque-interativo);
+  --markup-code: var(--cor-destaque-interativo);
+  --interactive-accent: var(--cor-destaque-interativo);
+  --blockquote-border: var(--cor-destaque-sutil);
+  --interactive-accent-rgb: 102, 92, 83;
+  --font-family-editor: "CMU Typewriter Text", "JetBrains Mono", sans-serif;
+  --font-family-preview: "CMU Typewriter Text", "JetBrains Mono", sans-serif;
+}
+
+/* ==============================================
+    ESTILOS GERAIS E ADICIONAIS
+  ==============================================
+*/
+
+/* --- Linhas de Divisão Sutis --- */
+hr {
+  border-top: 1.5px solid rgba(0, 0, 0, 0.15) !important;
+  margin: 1em 2 !important;
+}
+
+/* --- Links --- */
+.internal-link,
+.external-link,
+.cm-url {
+  color: var(--text-link) !important;
+  text-decoration: none !important;
+}
+
+.internal-link:hover,
+.external-link:hover,
+.cm-url:hover {
+  text-decoration: underline !important;
+}
+
+a:not(.internal-link) {
+  font-style: italic;
+}
+
+/* --- Barra de Rolagem --- */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  border-radius: 50px;
+}
+
+/* --- Interface do Usuário --- */
+.is-selected {
+  background-color: var(--interactive-accent) !important;
+  color: var(--background-primary) !important;
+}
+
+.notice {
+  background-color: var(--cor-fundo-secundario) !important;
+  color: var(--text-normal) !important;
+  border-left: 3px solid var(--interactive-accent) !important;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  border: 1px solid var(--cor-destaque-sutil);
+}
+
+/* =======================================================
+    BLOCO DE CÓDIGO - PALETA DE SINTAXE "TERRA ROSADA"
+  ======================================================= */
+
+/* 1. Fundo do Bloco de Código (Unificado para Edição e Visualização) */
+/* MODO VISUALIZAÇÃO */
+.markdown-preview-view code {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+/* MODO EDIÇÃO (CORREÇÃO) */
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian .HyperMD-codeblock .cm-line {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+/* 2. Palavras-chave (Keywords) */
+.cm-keyword,
+.token.keyword {
+  color: var(--syntax-keyword) !important;
+}
+
+/* 3. Textos (Strings) */
+.cm-string,
+.token.string {
+  color: var(--syntax-string) !important;
+}
+
+/* 4. Números */
+.cm-number,
+.token.number {
+  color: var(--syntax-number) !important;
+}
+
+/* 5. Nomes de Funções */
+.cm-def,
+.token.function {
+  color: var(--syntax-function) !important;
+  font-style: italic;
+}
+
+/* 6. Comentários */
+.cm-comment,
+.token.comment {
+  color: var(--syntax-comment) !important;
+  font-style: italic;
+}
+
+/* 7. Operadores e Pontuação */
+.cm-operator,
+.token.operator,
+.cm-punctuation,
+.token.punctuation {
+  color: var(--syntax-operator) !important;
+}
+
+/* 8. Variáveis e Texto Padrão */
+.cm-variable,
+.token.variable {
+  color: var(--syntax-variable) !important;
+}

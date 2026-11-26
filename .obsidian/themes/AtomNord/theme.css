@@ -1,0 +1,307 @@
+/* =================================================================
+   TEMA NORD VS CODE MODERN UI - V 2.0
+   Densidade equilibrada, painéis contínuos, bordas sutis 
+   e cantos levemente arredondados no padrão Modern UI.
+================================================================= */
+
+.theme-dark,
+.theme-light {
+  /* 1. Paleta de Superfície (Nord) */
+  --nord-base: #2e3440;
+  --nord-surface: #3b4252;
+  --nord-overlay: #434c5e;
+  --nord-highlight: #4c566a;
+
+  /* 2. Cores Complementares e Sintaxe (Frost & Aurora) */
+  --nord-text-main: #eceff4;
+  --nord-text-muted: #d8dee9;
+
+  --nord-accent: #88c0d0; /* Cyan (Frost) */
+  --nord-accent-hover: #81a1c1; /* Blue (Frost) */
+  --nord-dark-blue: #5e81ac; /* Dark Blue (Frost) */
+  --nord-green: #a3be8c; /* Green (Aurora) */
+  --nord-purple: #b48ead; /* Purple (Aurora) */
+  --nord-yellow: #ebcb8b; /* Yellow (Aurora) */
+  --nord-orange: #d08770; /* Orange (Aurora) */
+  --nord-comment: #768390; /* Cinza contrastante para comentários */
+
+  /* 3. Mapeamento Estrutural Estilo VS Code (Tons Nord Suaves) */
+  --background-primary: #343b48; /* Fundo do editor ligeiramente mais claro e suave */
+  --background-primary-alt: #3b4353; /* Destaques dentro do editor */
+  --background-secondary: #2e3440; /* Barra lateral suavizada (Nord0 genuíno, menos escuro) */
+  --background-secondary-alt: #353c4a; /* Painéis secundários e menus */
+  --background-modifier-border: rgba(
+    76,
+    86,
+    106,
+    0.35
+  ); /* Divisórias discretas */
+
+  --titlebar-background: #2e3440;
+  --titlebar-background-focused: #2e3440;
+
+  /* Grid sutil e moderno */
+  --nord-grid-color: rgba(136, 192, 208, 0.04);
+  --nord-grid-size: 28px;
+
+  /* 4. Tipografia Isolada */
+  --text-normal: var(--nord-text-main);
+  --text-muted: var(--nord-text-muted);
+
+  --text-title-h1: var(--nord-text-main);
+  --text-title-h2: var(--nord-text-main);
+  --text-title-h3: var(--nord-text-main);
+  --text-title-h4: var(--nord-text-main);
+  --text-title-h5: var(--nord-text-main);
+  --text-title-h6: var(--nord-text-main);
+
+  /* 5. Interatividade */
+  --accent-h: 193;
+  --accent-s: 43%;
+  --accent-l: 67%;
+
+  --text-accent: var(--nord-accent);
+  --text-accent-hover: var(--nord-accent-hover);
+  --interactive-accent: var(--nord-accent);
+  --interactive-accent-hover: var(--nord-accent-hover);
+  --markup-code: var(--nord-accent);
+  --text-tag: var(--nord-text-muted);
+  --text-mark: rgba(136, 192, 208, 0.25);
+  --blockquote-border: var(--nord-accent);
+
+  /* 6. Syntax Highlighting */
+  --code-normal: var(--nord-text-main);
+  --code-comment: var(--nord-comment);
+  --code-function: var(--nord-yellow);
+  --code-keyword: var(--nord-accent-hover);
+  --code-property: var(--nord-accent);
+  --code-string: var(--nord-green);
+  --code-number: var(--nord-purple);
+  --code-operator: var(--nord-dark-blue);
+  --code-punctuation: var(--nord-text-muted);
+  --code-tag: var(--nord-accent-hover);
+  --code-value: var(--nord-orange);
+
+  /* 7. Sistema de Arredondamento Modern UI (Sutil) */
+  --radius-xs: 2px;
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+  --radius-xl: 10px;
+
+  --button-radius: var(--radius-s);
+  --input-radius: var(--radius-s);
+  --tab-radius: var(--radius-s);
+  --tab-radius-active: var(--radius-s);
+  --modal-radius: var(--radius-l);
+  --menu-radius: var(--radius-m);
+  --prompt-border-radius: var(--radius-l);
+}
+
+/* =================================================================
+   ESTRUTURA CONTÍNUA E PAINÉIS LATERAIS (VS CODE)
+================================================================= */
+
+body {
+  background-color: var(--background-secondary);
+}
+
+/* Remoção do espaçamento de cartão solto */
+.workspace-split.mod-root .workspace-leaf,
+.workspace-split.mod-left-split .workspace-leaf,
+.workspace-split.mod-right-split .workspace-leaf {
+  padding: 0;
+}
+
+.workspace-leaf-content {
+  border-radius: 0;
+  border: none;
+}
+
+/* Separação nítida entre o editor central e as barras laterais */
+.workspace-split.mod-left-split {
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.workspace-split.mod-right-split {
+  border-left: 1px solid var(--background-modifier-border);
+}
+
+/* =================================================================
+   DENSIDADE DA ÁRVORE DE ARQUIVOS (EXPLORER)
+================================================================= */
+
+.nav-file-title,
+.nav-folder-title {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: var(--radius-s);
+  font-size: 13px;
+}
+
+.nav-file-title.is-active {
+  background-color: rgba(136, 192, 208, 0.15);
+  color: var(--nord-text-main);
+}
+
+/* =================================================================
+   COMPONENTE DE BUSCA E ENTRADAS DE TEXTO
+================================================================= */
+
+.search-input-container input,
+input[type="text"],
+input[type="search"] {
+  border-radius: var(--radius-s);
+  background-color: var(--nord-surface);
+  border: 1px solid var(--background-modifier-border);
+  padding: 4px 8px;
+}
+
+/* Devolve o recuo esquerdo para proteger o ícone da lupa */
+.search-input-container input {
+  padding-left: 32px;
+}
+
+.search-input-container input:focus,
+input[type="text"]:focus,
+input[type="search"]:focus {
+  border-color: var(--nord-accent);
+  box-shadow: 0 0 0 1px var(--nord-accent);
+}
+
+/* =================================================================
+   BLOCOS DE CÓDIGO E CONTEÚDO
+================================================================= */
+
+.markdown-preview-view code,
+.HyperMD-codeblock {
+  background-color: var(--nord-surface);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  color: var(--code-normal);
+}
+
+.markdown-preview-view blockquote {
+  background-color: rgba(67, 76, 94, 0.3);
+  border-left: 3px solid var(--blockquote-border);
+  border-radius: var(--radius-s);
+  padding: 6px 12px;
+}
+
+.markdown-preview-view img,
+.markdown-preview-view video,
+.markdown-preview-view table,
+.callout {
+  border-radius: var(--radius-m);
+}
+
+/* =================================================================
+   BARRA DE ROLAGEM E NOTIFICAÇÕES
+================================================================= */
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(76, 86, 106, 0.6);
+  border-radius: var(--radius-xs);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--nord-highlight);
+}
+
+.notice {
+  color: var(--text-normal);
+  background-color: var(--nord-surface);
+  border: 1px solid var(--background-modifier-border);
+  border-left: 3px solid var(--nord-accent);
+  border-radius: var(--radius-m);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.internal-link {
+  text-decoration: none;
+  color: var(--text-accent);
+}
+
+.internal-link:hover {
+  text-decoration: underline;
+}
+
+/* =================================================================
+   TÍTULOS E CALLOUTS NORD
+================================================================= */
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6,
+.inline-title {
+  color: var(--text-normal);
+}
+
+.callout[data-callout="done"],
+.callout[data-callout="check"],
+.admonition-done {
+  --callout-color: 136, 192, 208;
+  --admonition-color: 136, 192, 208;
+  background-color: color-mix(in srgb, rgb(136, 192, 208) 10%, var(--background-primary)) !important;
+}
+
+.callout[data-callout="done"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.admonition-done .admonition-title {
+  color: rgb(136, 192, 208);
+}
+
+/* =================================================================
+   GRID DE FUNDO SUTIL E MODERNO (EDITOR CENTRAL)
+================================================================= */
+
+.workspace-split.mod-root .markdown-source-view.mod-cm6,
+.workspace-split.mod-root .markdown-preview-view {
+  background-image: 
+    linear-gradient(to right, var(--nord-grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--nord-grid-color) 1px, transparent 1px);
+  background-size: var(--nord-grid-size) var(--nord-grid-size);
+}
+
+/* =================================================================
+   FUNDO OPACO PARA CALLOUTS E ADMONITIONS (PRESERVA CORES ORIGINAIS)
+   Combina a cor própria de cada tipo de bloco com o fundo sólido,
+   bloqueando o grid sem perder a diferenciação de cores.
+================================================================= */
+
+/* Camada 1 (raiz / externa): Fundo opaco misturado para bloquear o grid */
+.callout,
+.admonition {
+  background-color: color-mix(in srgb, rgb(var(--callout-color)) 10%, var(--background-primary)) !important;
+  background-color: color-mix(in srgb, var(--callout-color, rgb(61, 61, 61)) 10%, var(--background-primary)) !important;
+}
+
+/* Quote específico nativo (> [!quote]), cobrindo formatos numéricos e variáveis de cor */
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  background-color: color-mix(in srgb, rgb(var(--callout-color, 158, 158, 158)) 10%, var(--background-primary)) !important;
+  background-color: color-mix(in srgb, var(--callout-color, var(--text-muted)) 10%, var(--background-primary)) !important;
+}
+
+/* Camadas internas (aninhadas): Acumulam contraste e tonalidade sobre a camada externa */
+.callout .callout,
+.admonition .admonition,
+.callout .admonition,
+.admonition .callout {
+  background-color: color-mix(in srgb, rgb(var(--callout-color)) 10%, transparent) !important;
+  background-color: color-mix(in srgb, var(--callout-color, rgb(61, 61, 61)) 10%, transparent) !important;
+}

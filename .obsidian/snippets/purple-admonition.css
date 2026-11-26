@@ -1,0 +1,33 @@
+/* =================================================================
+   CATPPUCCIN MOCHA - ADMONITIONS & CALLOUTS
+   Cor: Mauve (Roxo Suave) - RGB: 203, 166, 247
+================================================================= */
+
+/* 1. Atualiza Callouts Nativos (> [!done] e > [!check]) */
+.callout[data-callout="done"],
+.callout[data-callout="check"] {
+    --callout-color: 203, 166, 247;
+    --callout-icon: lucide-check-circle; /* Garante o ícone correto */
+    background-color: rgba(203, 166, 247, 0.1); /* Fundo com 10% de opacidade */
+}
+
+/* 2. Atualiza Admonitions Antigos (```ad-done) */
+.admonition-done {
+    --admonition-color: 203, 166, 247;
+    background-color: rgba(203, 166, 247, 0.1);
+}
+
+/* 3. Garante que Ícones e Títulos usem a cor sólida */
+.callout[data-callout="done"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.admonition-done .admonition-title {
+    color: rgb(203, 166, 247) !important;
+}
+
+/* 4. (Opcional) Ajuste fino para o ícone específico dentro do título */
+.callout[data-callout="done"] .callout-icon,
+.callout[data-callout="check"] .callout-icon,
+.admonition-done .admonition-title-icon {
+    fill: rgb(203, 166, 247); /* Para ícones SVG */
+    color: rgb(203, 166, 247); /* Para ícones de fonte */
+}
