@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 212" width="860" height="212">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .sec-label { font-size: 12.5px; font-weight: 700; fill: #334155; }
+      .math { font-size: 15.5px; font-weight: 700; }
+      .math-sm { font-size: 13px; font-weight: 700; }
+      .sub { font-size: 10px; font-weight: 700; }
+      .sub-sm { font-size: 8.8px; font-weight: 700; }
+      .tiny { font-size: 10px; fill: #64748B; }
+    </style>
+    <marker id="arr-slate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.8" markerHeight="6.8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#7C3AED"/>
+    </marker>
+    <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.8" markerHeight="6.8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#0284C7"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#D97706"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#DC2626"/>
+    </marker>
+    <marker id="arr-red-mid" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#EF4444"/>
+    </marker>
+    <marker id="arr-red-soft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#F87171"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="860" height="212" fill="#FFFFFF"/>
+
+  <!-- Left: RNN -->
+  <rect x="18" y="16" width="402" height="180" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4"/>
+  <text x="36" y="42" class="sec-label">RNN (multiplicação por W<tspan dy="2.5" style="font-size:9px;">hh</tspan><tspan dy="-2.5"> + tanh')</tspan></text>
+
+  <rect x="55.0" y="97.0" width="54" height="34" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="82.0" y="118.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#5B21B6">h<tspan dy="3" class="sub-sm">1</tspan></text>
+  <rect x="195.0" y="97.0" width="54" height="34" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="222.0" y="118.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#5B21B6">h<tspan dy="3" class="sub-sm">2</tspan></text>
+  <rect x="335.0" y="97.0" width="54" height="34" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="362.0" y="118.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#5B21B6">h<tspan dy="3" class="sub-sm">3</tspan></text>
+
+  <line x1="109" y1="107" x2="190" y2="107" stroke="#7C3AED" stroke-width="2.2" marker-end="url(#arr-purple)"/>
+  <line x1="249" y1="107" x2="330" y2="107" stroke="#7C3AED" stroke-width="2.2" marker-end="url(#arr-purple)"/>
+  <text x="152" y="98" text-anchor="middle" class="tiny" style="fill:#B45309; font-weight:700;">W<tspan dy="2" style="font-size:7.5px;">hh</tspan><tspan dy="-2">, tanh</tspan></text>
+  <text x="292" y="98" text-anchor="middle" class="tiny" style="fill:#B45309; font-weight:700;">W<tspan dy="2" style="font-size:7.5px;">hh</tspan><tspan dy="-2">, tanh</tspan></text>
+
+  <line x1="335" y1="122" x2="255" y2="122" stroke="#EF4444" stroke-width="2.3" stroke-dasharray="5 3" marker-end="url(#arr-red-mid)"/>
+  <line x1="195" y1="122" x2="115" y2="122" stroke="#F87171" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arr-red-soft)"/>
+  <text x="222" y="168" text-anchor="middle" class="tiny" style="fill:#DC2626; font-weight:700;">∇ encolhe a cada passo</text>
+
+  <!-- Right: LSTM -->
+  <rect x="440" y="16" width="402" height="180" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4"/>
+  <text x="458" y="42" class="sec-label">LSTM (via expressa aditiva em c<tspan dy="2.5" style="font-size:9px;">t</tspan><tspan dy="-2.5">)</tspan></text>
+
+  <rect x="489.0" y="97.0" width="54" height="34" rx="8" fill="#F0F9FF" stroke="#0284C7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="516.0" y="118.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#0369A1">c<tspan dy="3" class="sub-sm">1</tspan></text>
+  <rect x="629.0" y="97.0" width="54" height="34" rx="8" fill="#F0F9FF" stroke="#0284C7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="656.0" y="118.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#0369A1">c<tspan dy="3" class="sub-sm">2</tspan></text>
+  <rect x="769.0" y="97.0" width="54" height="34" rx="8" fill="#F0F9FF" stroke="#0284C7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="796.0" y="118.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#0369A1">c<tspan dy="3" class="sub-sm">3</tspan></text>
+
+  <line x1="543" y1="107" x2="624" y2="107" stroke="#0284C7" stroke-width="2.6" marker-end="url(#arr-teal)"/>
+  <line x1="683" y1="107" x2="764" y2="107" stroke="#0284C7" stroke-width="2.6" marker-end="url(#arr-teal)"/>
+  <text x="586" y="98" text-anchor="middle" class="tiny" style="fill:#0369A1; font-weight:700;">× f<tspan dy="2" style="font-size:7.5px;">2</tspan><tspan dy="-2"> + i</tspan><tspan dy="2" style="font-size:7.5px;">2</tspan><tspan dy="-2">·c̃</tspan><tspan dy="2" style="font-size:7.5px;">2</tspan></text>
+  <text x="726" y="98" text-anchor="middle" class="tiny" style="fill:#0369A1; font-weight:700;">× f<tspan dy="2" style="font-size:7.5px;">3</tspan><tspan dy="-2"> + i</tspan><tspan dy="2" style="font-size:7.5px;">3</tspan><tspan dy="-2">·c̃</tspan><tspan dy="2" style="font-size:7.5px;">3</tspan></text>
+
+  <line x1="769" y1="122" x2="689" y2="122" stroke="#DC2626" stroke-width="2.8" stroke-dasharray="5 3" marker-end="url(#arr-red)"/>
+  <line x1="629" y1="122" x2="549" y2="122" stroke="#DC2626" stroke-width="2.8" stroke-dasharray="5 3" marker-end="url(#arr-red)"/>
+  <text x="656" y="168" text-anchor="middle" class="tiny" style="fill:#0369A1; font-weight:700;">∇ flui direto quando f<tspan dy="2" style="font-size:7.5px;">t</tspan><tspan dy="-2"> ≈ 1</tspan></text>
+</svg>

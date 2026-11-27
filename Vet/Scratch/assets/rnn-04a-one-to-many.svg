@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 214" width="448" height="214">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .sec-label { font-size: 12.5px; font-weight: 700; fill: #334155; }
+      .math { font-size: 16px; font-weight: 700; }
+      .math-sm { font-size: 13.5px; font-weight: 700; }
+      .sub { font-size: 10.5px; font-weight: 700; }
+      .sub-sm { font-size: 9px; font-weight: 700; }
+      .tiny { font-size: 10px; fill: #64748B; }
+    </style>
+    <marker id="arr-slate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.8" markerHeight="6.8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#7C3AED"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#059669"/>
+    </marker>
+    <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#D97706"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#DC2626"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="448" height="214" fill="#FFFFFF"/>
+  <line x1="92" y1="157" x2="92" y2="129" stroke="#2563EB" stroke-width="2.2" marker-end="url(#arr-blue)"/>  <rect x="63.0" y="158.0" width="58" height="32" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="92.0" y="178.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#1D4ED8">x<tspan dy="3" class="sub-sm">1</tspan></text>  <rect x="62.0" y="91.0" width="60" height="34" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="92.0" y="112.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#5B21B6">h<tspan dy="3" class="sub-sm">1</tspan></text>  <line x1="92" y1="91" x2="92" y2="63" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-green)"/>  <rect x="63.0" y="26.0" width="58" height="32" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <text x="92.0" y="46.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#047857">y<tspan dy="3" class="sub-sm">1</tspan></text>  <line x1="122" y1="108" x2="189" y2="108" stroke="#7C3AED" stroke-width="2.4" marker-end="url(#arr-purple)"/>  <path d="M 121 47 Q 158 66, 200 88" fill="none" stroke="#D97706" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-amber)"/>  <rect x="194.0" y="91.0" width="60" height="34" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="224.0" y="112.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#5B21B6">h<tspan dy="3" class="sub-sm">2</tspan></text>  <line x1="224" y1="91" x2="224" y2="63" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-green)"/>  <rect x="195.0" y="26.0" width="58" height="32" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <text x="224.0" y="46.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#047857">y<tspan dy="3" class="sub-sm">2</tspan></text>  <line x1="254" y1="108" x2="321" y2="108" stroke="#7C3AED" stroke-width="2.4" marker-end="url(#arr-purple)"/>  <path d="M 253 47 Q 290 66, 332 88" fill="none" stroke="#D97706" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr-amber)"/>  <rect x="326.0" y="91.0" width="60" height="34" rx="8" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="356.0" y="112.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#5B21B6">h<tspan dy="3" class="sub-sm">3</tspan></text>  <line x1="356" y1="91" x2="356" y2="63" stroke="#059669" stroke-width="2.2" marker-end="url(#arr-green)"/>  <rect x="327.0" y="26.0" width="58" height="32" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <text x="356.0" y="46.9" text-anchor="middle" style="font-size:14px; font-weight:700;" fill="#047857">y<tspan dy="3" class="sub-sm">3</tspan></text>
+</svg>

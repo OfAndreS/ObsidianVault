@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 460" width="840" height="460">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .sec-label { font-size: 12.5px; font-weight: 700; fill: #334155; }
+      .math { font-size: 16px; font-weight: 700; }
+      .math-sm { font-size: 13.5px; font-weight: 700; }
+      .sub { font-size: 10.5px; font-weight: 700; }
+      .sub-sm { font-size: 9px; font-weight: 700; }
+      .tiny { font-size: 10px; fill: #64748B; }
+    </style>
+    <marker id="arr-slate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.8" markerHeight="6.8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#7C3AED"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#059669"/>
+    </marker>
+    <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#D97706"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#DC2626"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="840" height="460" fill="#FFFFFF"/>
+
+  <!-- Main RNN Cell Dashed Boundary -->
+  <rect x="134" y="88" width="564" height="290" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="152" y="112" class="tiny" style="font-weight:700; letter-spacing:0.5px;">CÉLULA RNN (t)</text>
+
+  <!-- External nodes -->
+  <rect x="22.0" y="256.0" width="76" height="44" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="60.0" y="283.6" text-anchor="middle" style="font-size:16px; font-weight:700;" fill="#5B21B6">h<tspan dy="3.5" class="sub">t−1</tspan></text>
+  <rect x="272.0" y="400.0" width="76" height="44" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="310.0" y="427.6" text-anchor="middle" style="font-size:16px; font-weight:700;" fill="#1D4ED8">x<tspan dy="3.5" class="sub">t</tspan></text>
+  <rect x="734.0" y="256.0" width="76" height="44" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="772.0" y="283.6" text-anchor="middle" style="font-size:16px; font-weight:700;" fill="#5B21B6">h<tspan dy="3.5" class="sub">t</tspan></text>
+  <rect x="508.0" y="14.0" width="76" height="44" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <text x="546.0" y="41.6" text-anchor="middle" style="font-size:16px; font-weight:700;" fill="#047857">y<tspan dy="3.5" class="sub">t</tspan></text>
+
+  <!-- Memory path -->
+  <line x1="98" y1="278" x2="158" y2="278" stroke="#7C3AED" stroke-width="2.4" marker-end="url(#arr-purple)"/>
+  <rect x="164.0" y="259.0" width="68" height="38" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="198.0" y="282.7" text-anchor="middle" style="font-size:13.5px; font-weight:700;" fill="#B45309">× W<tspan dy="3" class="sub-sm">hh</tspan></text>
+  <line x1="232" y1="278" x2="286" y2="278" stroke="#475569" stroke-width="2.1" marker-end="url(#arr-slate)"/>
+
+  <!-- Input path -->
+  <line x1="310" y1="400" x2="310" y2="365" stroke="#2563EB" stroke-width="2.4" marker-end="url(#arr-blue)"/>
+  <rect x="276.0" y="321.0" width="68" height="38" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="310.0" y="344.7" text-anchor="middle" style="font-size:13.5px; font-weight:700;" fill="#B45309">× W<tspan dy="3" class="sub-sm">xh</tspan></text>
+  <line x1="310" y1="321" x2="310" y2="301" stroke="#475569" stroke-width="2.1" marker-end="url(#arr-slate)"/>
+
+  <!-- Bias b_h -->
+  <rect x="282.0" y="195.0" width="56" height="30" rx="15" fill="#FFFBEB" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="310.0" y="214.6" text-anchor="middle" style="font-size:13px; font-weight:700;" fill="#B45309">+ b<tspan dy="2.5" class="sub-sm">h</tspan></text>
+  <line x1="310" y1="225" x2="310" y2="254" stroke="#D97706" stroke-width="2" marker-end="url(#arr-amber)"/>
+
+  <!-- Sum (+) for h_t -->
+  <circle cx="310" cy="278" r="18" fill="#FFFFFF" stroke="#334155" stroke-width="2.2" filter="url(#shadow)"/>
+  <text x="310" y="284.5" text-anchor="middle" style="font-size:20px; font-weight:700; fill:#1E293B;">+</text>
+
+  <!-- Sum -> tanh -->
+  <line x1="328" y1="278" x2="380" y2="278" stroke="#475569" stroke-width="2.1" marker-end="url(#arr-slate)"/>
+  <rect x="386.0" y="257.0" width="80" height="42" rx="10" fill="#1E293B" stroke="#0F172A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="426.0" y="283.2" text-anchor="middle" style="font-size:15px; font-weight:700;" fill="#FFFFFF">tanh</text>
+
+  <!-- tanh -> split -> right h_t -->
+  <line x1="466" y1="278" x2="728" y2="278" stroke="#7C3AED" stroke-width="2.6" marker-end="url(#arr-purple)"/>
+  <text x="506" y="268" text-anchor="middle" class="math-sm" fill="#6D28D9">h<tspan dy="3" class="sub-sm">t</tspan></text>
+  <circle cx="546" cy="278" r="6" fill="#7C3AED" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Output path up from split -->
+  <line x1="546" y1="272" x2="546" y2="246" stroke="#7C3AED" stroke-width="2.3" marker-end="url(#arr-purple)"/>
+  <rect x="512.0" y="204.0" width="68" height="36" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="546.0" y="226.7" text-anchor="middle" style="font-size:13.5px; font-weight:700;" fill="#B45309">× W<tspan dy="3" class="sub-sm">hy</tspan></text>
+  <line x1="546" y1="204" x2="546" y2="188" stroke="#475569" stroke-width="2.1" marker-end="url(#arr-slate)"/>
+
+  <!-- Sum (+) for y_t -->
+  <circle cx="546" cy="170" r="14" fill="#FFFFFF" stroke="#334155" stroke-width="2.1" filter="url(#shadow)"/>
+  <text x="546" y="176" text-anchor="middle" style="font-size:18px; font-weight:700; fill:#1E293B;">+</text>
+
+  <!-- Bias b_y -->
+  <rect x="598.0" y="155.0" width="56" height="30" rx="15" fill="#FFFBEB" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="626.0" y="174.6" text-anchor="middle" style="font-size:13px; font-weight:700;" fill="#B45309">+ b<tspan dy="2.5" class="sub-sm">y</tspan></text>
+  <line x1="598" y1="170" x2="565" y2="170" stroke="#D97706" stroke-width="2" marker-end="url(#arr-amber)"/>
+
+  <!-- Sum -> ativação -> y_t -->
+  <line x1="546" y1="156" x2="546" y2="141" stroke="#475569" stroke-width="2.1" marker-end="url(#arr-slate)"/>
+  <rect x="500.0" y="101.0" width="92" height="34" rx="9" fill="#065F46" stroke="#047857" stroke-width="2" filter="url(#shadow)"/>
+  <text x="546.0" y="122.5" text-anchor="middle" style="font-size:13px; font-weight:700;" fill="#FFFFFF">ativação</text>
+  <line x1="546" y1="101" x2="546" y2="63" stroke="#059669" stroke-width="2.4" marker-end="url(#arr-green)"/>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 404" width="860" height="404">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .sec-label { font-size: 12.5px; font-weight: 700; fill: #334155; }
+      .math { font-size: 15.5px; font-weight: 700; }
+      .math-sm { font-size: 13px; font-weight: 700; }
+      .sub { font-size: 10px; font-weight: 700; }
+      .sub-sm { font-size: 8.8px; font-weight: 700; }
+      .tiny { font-size: 10px; fill: #64748B; }
+    </style>
+    <marker id="arr-slate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arr-purple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.8" markerHeight="6.8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#7C3AED"/>
+    </marker>
+    <marker id="arr-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.8" markerHeight="6.8" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#0284C7"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arr-amber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#D97706"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#DC2626"/>
+    </marker>
+    <marker id="arr-red-mid" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#EF4444"/>
+    </marker>
+    <marker id="arr-red-soft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#F87171"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="860" height="404" fill="#FFFFFF"/>
+
+  <!-- Cell dashed boundary -->
+  <rect x="132" y="36" width="596" height="296" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="150" y="58" class="tiny" style="font-weight:700; letter-spacing:0.5px;">CÉLULA LSTM (t)</text>
+
+  <!-- External nodes -->
+  <rect x="23.0" y="70.0" width="74" height="40" rx="10" fill="#F0F9FF" stroke="#0284C7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="60.0" y="95.4" text-anchor="middle" style="font-size:15.5px; font-weight:700;" fill="#0369A1">c<tspan dy="3.5" class="sub">t−1</tspan></text>
+  <rect x="759.0" y="70.0" width="74" height="40" rx="10" fill="#F0F9FF" stroke="#0284C7" stroke-width="2" filter="url(#shadow)"/>
+  <text x="796.0" y="95.4" text-anchor="middle" style="font-size:15.5px; font-weight:700;" fill="#0369A1">c<tspan dy="3.5" class="sub">t</tspan></text>
+  <rect x="23.0" y="284.0" width="74" height="40" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="60.0" y="309.4" text-anchor="middle" style="font-size:15.5px; font-weight:700;" fill="#5B21B6">h<tspan dy="3.5" class="sub">t−1</tspan></text>
+  <rect x="759.0" y="284.0" width="74" height="40" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2" filter="url(#shadow)"/>
+  <text x="796.0" y="309.4" text-anchor="middle" style="font-size:15.5px; font-weight:700;" fill="#5B21B6">h<tspan dy="3.5" class="sub">t</tspan></text>
+  <rect x="154.0" y="353.0" width="72" height="38" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <text x="190.0" y="377.4" text-anchor="middle" style="font-size:15.5px; font-weight:700;" fill="#1D4ED8">x<tspan dy="3.5" class="sub">t</tspan></text>
+
+  <!-- ================= CELL STATE HIGHWAY ================= -->
+  <line x1="97" y1="90" x2="237" y2="90" stroke="#0284C7" stroke-width="3" marker-end="url(#arr-teal)"/>
+  <line x1="271" y1="90" x2="449" y2="90" stroke="#0284C7" stroke-width="3" marker-end="url(#arr-teal)"/>
+  <line x1="483" y1="90" x2="753" y2="90" stroke="#0284C7" stroke-width="3" marker-end="url(#arr-teal)"/>
+
+  <!-- Branch down from c_t -> tanh -> out_mul -->
+  <circle cx="660" cy="90" r="5" fill="#0284C7" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="660" y1="95" x2="660" y2="128" stroke="#0284C7" stroke-width="2.2" marker-end="url(#arr-teal)"/>
+  <rect x="628.0" y="133.0" width="64" height="30" rx="8" fill="#1E293B" stroke="#0F172A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="660.0" y="152.4" text-anchor="middle" style="font-size:12.5px; font-weight:700;" fill="#FFFFFF">tanh</text>
+  <line x1="660" y1="163" x2="660" y2="189" stroke="#475569" stroke-width="2.1" marker-end="url(#arr-slate)"/>
+
+  <!-- ================= BOTTOM BUS [h_(t-1), x_t] ================= -->
+  <line x1="97" y1="304" x2="574" y2="304" stroke="#7C3AED" stroke-width="2.4"/>
+  <line x1="190" y1="353" x2="190" y2="309" stroke="#2563EB" stroke-width="2.4" marker-end="url(#arr-blue)"/>
+  <circle cx="190" cy="304" r="5" fill="#334155" stroke="#FFFFFF" stroke-width="1.5"/>
+
+  <line x1="256" y1="304" x2="256" y2="273" stroke="#475569" stroke-width="2" marker-end="url(#arr-slate)"/>
+  <line x1="374" y1="304" x2="374" y2="273" stroke="#475569" stroke-width="2" marker-end="url(#arr-slate)"/>
+  <line x1="468" y1="304" x2="468" y2="273" stroke="#475569" stroke-width="2" marker-end="url(#arr-slate)"/>
+  <line x1="574" y1="304" x2="574" y2="273" stroke="#475569" stroke-width="2" marker-end="url(#arr-slate)"/>
+
+  <!-- ================= 4 GATES / CANDIDATE ================= -->
+  <!-- 1. Forget gate f_t -->
+  <rect x="233.0" y="236.0" width="46" height="32" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="256.0" y="257.6" text-anchor="middle" style="font-size:16px; font-weight:700;" fill="#B45309">σ</text>
+  <line x1="256" y1="236" x2="256" y2="109" stroke="#D97706" stroke-width="2.2" marker-end="url(#arr-amber)"/>
+  <text x="244" y="176" text-anchor="end" class="math-sm" fill="#B45309">f<tspan dy="3" class="sub-sm">t</tspan></text>
+
+  <!-- 2. Input gate i_t -->
+  <rect x="351.0" y="236.0" width="46" height="32" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="374.0" y="257.6" text-anchor="middle" style="font-size:16px; font-weight:700;" fill="#B45309">σ</text>
+  <path d="M 374 236 L 374 176 L 449 176" fill="none" stroke="#D97706" stroke-width="2.2" marker-end="url(#arr-amber)"/>
+  <text x="364" y="206" text-anchor="end" class="math-sm" fill="#B45309">i<tspan dy="3" class="sub-sm">t</tspan></text>
+
+  <!-- 3. Candidate c_tilde_t -->
+  <rect x="440.0" y="236.0" width="56" height="32" rx="8" fill="#1E293B" stroke="#0F172A" stroke-width="2" filter="url(#shadow)"/>
+  <text x="468.0" y="256.4" text-anchor="middle" style="font-size:12.5px; font-weight:700;" fill="#FFFFFF">tanh</text>
+  <line x1="468" y1="236" x2="468" y2="195" stroke="#475569" stroke-width="2.2" marker-end="url(#arr-slate)"/>
+  <text x="480" y="216" text-anchor="start" class="math-sm" fill="#334155">c̃<tspan dy="3" class="sub-sm">t</tspan></text>
+  <line x1="468" y1="161" x2="468" y2="109" stroke="#0284C7" stroke-width="2.2" marker-end="url(#arr-teal)"/>
+
+  <!-- 4. Output gate o_t -->
+  <rect x="551.0" y="236.0" width="46" height="32" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <text x="574.0" y="257.6" text-anchor="middle" style="font-size:16px; font-weight:700;" fill="#B45309">σ</text>
+  <path d="M 574 236 L 574 208 L 641 208" fill="none" stroke="#D97706" stroke-width="2.2" marker-end="url(#arr-amber)"/>
+  <text x="564" y="220" text-anchor="end" class="math-sm" fill="#B45309">o<tspan dy="3" class="sub-sm">t</tspan></text>
+
+  <!-- ================= POINTWISE OPERATIONS ================= -->
+  <circle cx="256" cy="90" r="15" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.1" filter="url(#shadow)"/>
+  <text x="256" y="96" text-anchor="middle" style="font-size:18px; font-weight:700;" fill="#1E293B">×</text>
+  <circle cx="468" cy="176" r="15" fill="#FFFFFF" stroke="#475569" stroke-width="2.1" filter="url(#shadow)"/>
+  <text x="468" y="182" text-anchor="middle" style="font-size:18px; font-weight:700;" fill="#1E293B">×</text>
+  <circle cx="468" cy="90" r="15" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.1" filter="url(#shadow)"/>
+  <text x="468" y="96" text-anchor="middle" style="font-size:18px; font-weight:700;" fill="#1E293B">+</text>
+  <circle cx="660" cy="208" r="15" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.1" filter="url(#shadow)"/>
+  <text x="660" y="214" text-anchor="middle" style="font-size:18px; font-weight:700;" fill="#1E293B">×</text>
+
+  <!-- Output h_t -->
+  <path d="M 660 223 L 660 304 L 753 304" fill="none" stroke="#7C3AED" stroke-width="2.6" marker-end="url(#arr-purple)"/>
+</svg>
